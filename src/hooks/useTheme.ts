@@ -52,7 +52,7 @@ export const useTheme = () => {
     document.documentElement.style.setProperty('--secondary', theme.secondary);
     document.documentElement.style.setProperty('--neutral-light', theme.neutral.light);
     document.documentElement.style.setProperty('--neutral', theme.neutral.DEFAULT);
-  }, []);
+  }, [theme.primary, theme.secondary, theme.neutral.light, theme.neutral.DEFAULT]);
 
   return { theme, updateTheme };
 };
