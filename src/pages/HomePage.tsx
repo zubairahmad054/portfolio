@@ -85,8 +85,7 @@ const HomePage: React.FC = () => {
                 initial="initial"
                 animate="animate"
                 className="flex flex-wrap gap-4"
-              >
-                <motion.button
+              >                <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-secondary text-primary px-8 py-4 rounded-md font-medium relative group overflow-hidden"
@@ -96,15 +95,17 @@ const HomePage: React.FC = () => {
                   <div className="absolute inset-0 bg-secondary-dark transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
                 </motion.button>
                 
-                <motion.button
+                <motion.a
+                  href="/ZubairAhmad_CV_Tech.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="border-2 border-secondary text-secondary px-8 py-4 rounded-md font-medium relative group overflow-hidden"
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="border-2 border-secondary text-secondary px-8 py-4 rounded-md font-medium relative group overflow-hidden inline-flex items-center justify-center"
                 >
-                  <span className="relative z-10">Get in Touch</span>
+                  <span className="relative z-10">Resume</span>
                   <div className="absolute inset-0 bg-secondary/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
-                </motion.button>
+                </motion.a>
               </motion.div>
 
               <motion.div
